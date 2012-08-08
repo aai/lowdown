@@ -1,4 +1,7 @@
 source :rubygems
+
+ruby "1.9.3"
+
 gem "rails", "2.3.5"
 gem "chronic", "0.2.3"
 gem "daemons", "1.0.10"
@@ -56,6 +59,10 @@ group :development do
   
   gem "heroku"  
   gem "taps"
+end
+
+group :production do
+  gem "thin", "1.2.2"
 end
 
 # gem "passenger", "2.2.4"

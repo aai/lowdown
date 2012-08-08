@@ -160,6 +160,7 @@ GEM
     chronic (0.2.3)
       hoe (>= 1.2.1)
     daemons (1.0.10)
+    eventmachine (0.12.10)
     fastthread (1.0.7)
     gemcutter (0.3.0)
       json_pure
@@ -203,6 +204,10 @@ GEM
       sinatra (~> 1.0.0)
       sqlite3-ruby (~> 1.2)
     test-unit (2.4.8)
+    thin (1.2.2)
+      daemons (>= 1.0.9)
+      eventmachine (>= 0.12.6)
+      rack (>= 1.0.0)
     webrat (0.5.3)
       nokogiri (>= 1.2.0)
       rack (>= 1.0)
@@ -250,6 +255,7 @@ DEPENDENCIES
   taps
   term-ansicolor (= 1.0.4)!
   test-unit
+  thin (= 1.2.2)
   thoughtbot-factory_girl (= 1.2.1)!
   treetop (= 1.3.0)!
   webrat (= 0.5.3)
